@@ -1,0 +1,85 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: v.$spacing-sm;
+    border-radius: v.$spacing-sm;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    font-family: inherit;
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    &:focus,
+    &:focus-visible {
+        outline: 2px auto -webkit-focus-ring-color;
+    }
+
+    &--primary {
+        background-color: v.$color-primary;
+        color: v.$color-white;
+
+        &:hover:not(:disabled) {
+            background-color: v.$color-primary-hover;
+            @include m.paper-shadow;
+        }
+    }
+
+    &--secondary {
+        background-color: v.$color-bg-gray;
+        color: v.$color-text;
+
+        &:hover:not(:disabled) {
+            background-color: #f1f5f9db;
+        }
+    }
+
+    &--outline {
+        background-color: transparent;
+        border-color: v.$color-primary;
+        color: v.$color-primary;
+
+        &:hover:not(:disabled) {
+            background-color: rgba(36, 99, 235, 0.05);
+        }
+    }
+
+    &--ghost {
+        background-color: transparent;
+        color: v.$color-text;
+
+        &:focus,
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+    &--danger {
+        background-color: #ef4444;
+        color: v.$color-white;
+
+        &:hover:not(:disabled) {
+            background-color: #dc2626;
+        }
+    }
+
+    &--sm {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    &--md {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    &--lg {
+        padding: 14px 28px;
+        font-size: 18px;
+    }
+}

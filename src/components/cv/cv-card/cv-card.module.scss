@@ -1,0 +1,7 @@
+.cv-card {
+    width: 840px;
+    height: 1188px;
+    margin-top: 48px;
+    background-color: v.$color-white;
+    @include m.paper-shadow;
+}
