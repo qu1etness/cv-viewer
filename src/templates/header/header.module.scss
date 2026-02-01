@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 24px;
+    background-color: v.$color-white;
+    border-bottom: 1px solid v.$color-app-bg;
+    height: 64px;
+
+    &-logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &-logo-icon {
+        @include m.center-content;
+        padding: 6px;
+        color: v.$color-primary-hover;
+        border-radius: 5px;
+        background-color: #2463eb1a;
+    }
+
+}
