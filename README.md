@@ -1,75 +1,117 @@
-# React + TypeScript + Vite
+# CV Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Простий React + TypeScript + Vite застосунок для перегляду вашого резюме (CV) у браузері.
 
-Currently, two official plugins are available:
+Проєкт створений як легкий і сучасний інструмент для демонстрації CV. Може використовуватись як портфоліо-сайт або частина особистого профілю розробника.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Особливості
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- React 18+
+- TypeScript
+- Vite для швидкої розробки
+- Відображення CV у зручному веб-інтерфейсі
+- Чиста та зрозуміла структура проєкту
+- ESLint для підтримки якості коду
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## 🧠 Передумови
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Перед початком переконайся, що встановлено:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Node.js (рекомендовано версія 18 або новіша)
+- npm або yarn
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Встановлення
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Клонування репозиторію та встановлення залежностей:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+git clone https://github.com/qu1etness/cv-viewer.git
+cd cv-viewer
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+або
+
+yarn install
+
+---
+
+## 🚀 Запуск у режимі розробки
+
+npm run dev
+
+або
+
+yarn dev
+
+Після запуску застосунок буде доступний за адресою:
+http://localhost:5173/
+
+---
+
+## 🛠️ Доступні скрипти
+
+- npm run dev — запуск у режимі розробки
+- npm run build — створення production-збірки
+- npm run preview — перегляд production-версії локально
+- npm run lint — перевірка коду ESLint
+
+---
+
+## 📁 Структура проєкту
+
+cv-viewer/
+├── public/            Статичні файли
+├── src/
+│   ├── components/    React компоненти
+│   ├── assets/        Зображення та інші ресурси
+│   ├── pages/         Сторінки (якщо використовуються)
+│   ├── App.tsx        Головний компонент
+│   └── main.tsx       Точка входу
+├── index.html
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+
+---
+
+## 🎨 Кастомізація
+
+Щоб адаптувати застосунок під своє резюме:
+
+1. Знайди компонент, який відповідає за відображення CV.
+2. Замінити тестові дані на власні: імʼя, досвід, навички, контакти.
+3. За потреби додай стилі або UI-бібліотеку (Tailwind, MUI тощо).
+
+---
+
+## 📌 Деплой
+
+Проєкт легко задеплоїти на:
+
+- GitHub Pages
+- Vercel
+- Netlify
+
+Перед деплоєм виконай:
+
+npm run build
+
+Готові файли будуть у папці dist/.
+
+---
+
+## 🤝 Внесок
+
+Pull request'и та ідеї для покращення вітаються.
+Можеш створити issue або запропонувати зміни напряму.
+
+---
+
+## 📄 Ліцензія
+
+MIT License
