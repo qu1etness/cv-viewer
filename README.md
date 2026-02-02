@@ -1,117 +1,86 @@
 # CV Viewer
 
-Простий React + TypeScript + Vite застосунок для перегляду вашого резюме (CV) у браузері.
+A simple **React + TypeScript + Vite** application for viewing a CV (resume) directly in the browser.
 
-Проєкт створений як легкий і сучасний інструмент для демонстрації CV. Може використовуватись як портфоліо-сайт або частина особистого профілю розробника.
+This project is designed as a lightweight and modern tool for showcasing a resume and can be used as a personal portfolio project or a base for further customization.
 
 ---
 
-## 🚀 Особливості
+## 🚀 Features
 
 - React 18+
 - TypeScript
-- Vite для швидкої розробки
-- Відображення CV у зручному веб-інтерфейсі
-- Чиста та зрозуміла структура проєкту
-- ESLint для підтримки якості коду
+- Vite for fast development
+- Clean and maintainable project structure
+- CV / resume rendering in a web interface
+- ESLint for code quality and consistency
 
 ---
 
-## 🧠 Передумови
+## 🧠 Prerequisites
 
-Перед початком переконайся, що встановлено:
+Make sure you have the following installed:
 
-- Node.js (рекомендовано версія 18 або новіша)
-- npm або yarn
+- Node.js (recommended version 18 or higher)
+- npm or yarn
 
 ---
 
-## 📦 Встановлення
+## 📦 Installation
 
-Клонування репозиторію та встановлення залежностей:
+Clone the repository and install dependencies:
 
 git clone https://github.com/qu1etness/cv-viewer.git
 cd cv-viewer
 npm install
 
-або
+or
 
 yarn install
 
 ---
 
-## 🚀 Запуск у режимі розробки
+## 🚀 Running the project
+
+Start the development server:
 
 npm run dev
 
-або
+or
 
 yarn dev
 
-Після запуску застосунок буде доступний за адресою:
+The application will be available at:
 http://localhost:5173/
 
 ---
 
-## 🛠️ Доступні скрипти
+## 🛠️ Available Scripts
 
-- npm run dev — запуск у режимі розробки
-- npm run build — створення production-збірки
-- npm run preview — перегляд production-версії локально
-- npm run lint — перевірка коду ESLint
+- npm run dev — run the app in development mode
+- npm run build — create a production build
+- npm run preview — preview the production build locally
+- npm run lint — run ESLint to check code quality
 
----
+## 📁 Project Structure
 
-## 📁 Структура проєкту
-
+```
 cv-viewer/
-├── public/            Статичні файли
+├── public/      
 ├── src/
-│   ├── components/    React компоненти
-│   ├── assets/        Зображення та інші ресурси
-│   ├── pages/         Сторінки (якщо використовуються)
-│   ├── App.tsx        Головний компонент
-│   └── main.tsx       Точка входу
+│   ├── components/    React components
+│   ├── assets/        Images and other resources
+│   ├── hooks/
+│   ├── context/
+│   ├── interfaces/
+│   ├── styles/
+│   ├── templates/                  
+|   ├── data/          
+│   ├── App.tsx        Root component
+│   └── main.tsx       Application entry point
 ├── index.html
 ├── package.json
 ├── tsconfig.json
 └── vite.config.ts
+```
 
----
-
-## 🎨 Кастомізація
-
-Щоб адаптувати застосунок під своє резюме:
-
-1. Знайди компонент, який відповідає за відображення CV.
-2. Замінити тестові дані на власні: імʼя, досвід, навички, контакти.
-3. За потреби додай стилі або UI-бібліотеку (Tailwind, MUI тощо).
-
----
-
-## 📌 Деплой
-
-Проєкт легко задеплоїти на:
-
-- GitHub Pages
-- Vercel
-- Netlify
-
-Перед деплоєм виконай:
-
-npm run build
-
-Готові файли будуть у папці dist/.
-
----
-
-## 🤝 Внесок
-
-Pull request'и та ідеї для покращення вітаються.
-Можеш створити issue або запропонувати зміни напряму.
-
----
-
-## 📄 Ліцензія
-
-MIT License
