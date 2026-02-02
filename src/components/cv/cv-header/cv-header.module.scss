@@ -1,0 +1,11 @@
+.cv-header {
+    @include m.flex-column(0);
+
+    &__information {
+        margin-top: 0.2em;
+        margin-bottom: 1.1em;
+        line-height: 1;
+        font-style: normal;
+        letter-spacing: -0.007em;
+    }
+}

@@ -59,27 +59,18 @@
         }
     }
 
-    &--danger {
-        background-color: #ef4444;
-        color: v.$color-white;
-
-        &:hover:not(:disabled) {
-            background-color: #dc2626;
-        }
-    }
-
     &--sm {
-        padding: 8px 20px;
-        font-size: 14px;
+        padding: v.$spacing-sm v.$spacing-md;
+        font-size: v.$spacing-md;
     }
 
     &--md {
-        padding: 12px 24px;
-        font-size: 16px;
+        padding: v.$spacing-sm v.$spacing-lg;
+        font-size: v.$spacing-md;
     }
 
     &--lg {
-        padding: 14px 28px;
+        padding: v.$spacing-md v.$spacing-xl;
         font-size: 18px;
     }
 }

@@ -1,0 +1,106 @@
+{
+    "personalInfo": {
+        "name": "Claudette Lening",
+        "location": "CareerOS Academy - Barcelona, Spain",
+        "email": "claudette.lening@cosacademy.edu",
+        "phone": "+34 612 345 678",
+        "linkedin": "linkedin.com/in/claudette-lening"
+    },
+    "experience": [
+        {
+            "title": "RELEVANT EXPERIENCE",
+            "sections": [
+                {
+                    "duration": "10.24 - 02.25",
+                    "title": "CyberFort Solutions",
+                    "location": "Barcelona, Spain",
+                    "position": "Project Coordinator",
+                    "responsibilities": [
+                        "Oversaw scheduling, documentation, and progress tracking for internal IT infrastructure upgrades.",
+                        "Worked alongside security analysts to identify workflow bottlenecks and recommend process improvements.",
+                        "Assisted in communication between vendors and reviewed contracts for third-party software providers."
+                    ]
+                },
+                {
+                    "duration": "05.24 - 08.24",
+                    "title": "BrightWave Digital",
+                    "location": "Barcelona, Spain",
+                    "position": "Summer Project Management Intern",
+                    "responsibilities": [
+                        "Coordinated deadlines and deliverables for a cross-functional team handling client advertising campaigns.",
+                        "Curated internal status reports summarizing campaign metrics, budget usage, and upcoming project milestones.",
+                        "Developed foundational practices in agile project management tools and team collaboration platforms."
+                    ]
+                },
+                {
+                    "duration": "06.23 - 08.23",
+                    "title": "DeltaNova Technologies",
+                    "location": "Madrid, Spain",
+                    "position": "Summer Business Operations Intern",
+                    "responsibilities": [
+                        "Streamlined project documentation and meeting records to support efficient product launch execution.",
+                        "Engaged in client update calls, providing project status recaps and next-step outlines.",
+                        "Prepared post-project reviews that uncovered a 15% increase in team efficiency opportunities and documented best practices."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "EDUCATION",
+            "sections": [
+                {
+                    "duration": "09.23 - 05.24",
+                    "title": "CareerOS Academy",
+                    "location": "Barcelona, Spain",
+                    "position": "MSc in Project Management",
+                    "responsibilities": [
+                        "Engaged in comprehensive coursework on Agile methodologies, risk management, and stakeholder analysis; led a capstone project simulating a cross-functional product launch."
+                    ]
+                },
+                {
+                    "duration": "09.19 - 05.22",
+                    "title": "CareerOS Academy",
+                    "location": "Barcelona, Spain",
+                    "position": "BA in Business Administration",
+                    "responsibilities": [
+                        "Completed coursework in corporate finance, marketing strategy, and organizational behavior; collaborated on a consulting project for a local startup to optimize operations."
+                    ]
+                }
+            ]
+        }
+    ],
+    "awards": {
+        "title": "EXTRACURRICULAR & AWARDS",
+        "sections": [
+            {
+                "duration": "09.21 - 05.21",
+                "description": "President of the Data Analytics Club at CareerOS Academy"
+            }
+        ]
+    },
+    "skills": {
+        "title": "ADDITIONAL INFORMATION & SKILLS",
+        "sections": [
+            {
+                "option": "Languages",
+                "skills": [
+                    "Spanish (Native)",
+                    "English (Fluent)",
+                    "Italian (Intermediate)"
+                ]
+            },
+            {
+                "option": "Additional Skills",
+                "skills": [
+                    "NIST Cybersecurity Framework",
+                    "Microsoft Office",
+                    "Kali Linux",
+                    "Incident Response Planning",
+                    "Firewall Configuration",
+                    "AWS Security",
+                    "AES Encryption"
+                ]
+            }
+        ]
+    }
+}

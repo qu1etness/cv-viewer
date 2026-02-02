@@ -1,20 +1,43 @@
 .sidebar {
-    height: 100%;
-    width: 380px;
+    width: 340px;
     background-color: v.$color-white;
     border-left: 1px solid v.$color-app-bg;
-}
+    overflow: auto;
 
-.sidebar__header {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    width: 100%;
-    padding: 20px;
-    border-bottom: 1px solid v.$color-app-bg;
-}
+    @include m.xl {
+        width: 320px;
+    }
 
-.sidebar__header_button {
-    margin-top: 24px;
-    width: 100%;
+    @include m.lg {
+        width: 280px;
+    }
+
+    @include m.md {
+        width: 200px;
+    }
+
+    @include m.sm {
+        width: 100%;
+    }
+
+    @include m.xs {
+        width: 100%;
+    }
+
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+        padding: v.$spacing-md;
+        border-bottom: 1px solid v.$color-app-bg;
+
+        &__button {
+            margin-top: v.$spacing-md;
+            width: 100%;
+        }
+    }
+
+
 }

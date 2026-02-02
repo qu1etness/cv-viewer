@@ -1,0 +1,17 @@
+.comment {
+    background-color: v.$color-bg-gray;
+    padding: v.$spacing-sm;
+    border: 1px solid v.$color-black;
+    border-radius: v.$border-radius;
+    width: 100%;
+    height: min-content;
+
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-break: break-word;
+
+    P {
+        font-size: v.$font-size-base;
+        line-height: 1.5;
+    }
+}

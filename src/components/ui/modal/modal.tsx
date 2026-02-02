@@ -2,8 +2,8 @@ import style from "./modal.module.scss";
 import { type ComponentProps, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 import { X } from 'lucide-react';
-import Button from "../button/button.tsx";
-import createModalContext from "../../../context/create-modal-context.tsx";
+import Button from "@/components/ui/button/button.tsx";
+import createModalContext from "@/context/create-modal-context.tsx";
 
 export interface IModalProps {
     children?: ReactNode;
@@ -34,7 +34,7 @@ const ModalHeader = ({ children, ...props }: ComponentProps<"div">) => {
     return (
         <div
             {...props}
-            className={style['modal__header']}
+            className={style['overlay__modal__header']}
         >
             {children}
             <Button onClick={handleClose} variant="ghost">
@@ -60,6 +60,7 @@ const ModalDescription = ({ children, ...props }: ComponentProps<"div">) => {
 
     return (
         <div
+            className={style['overlay__modal__description']}
             {...props}
         >
             {children}
@@ -96,7 +97,7 @@ const ModalContent = ({ children, ...props }: ComponentProps<"div">) => {
     return createPortal(
         <div className={style.overlay} onClick={handleBackdropClick}>
             <div
-                className={style.modal}
+                className={style['overlay__modal']}
                 {...props}
             >
                 {children}
@@ -111,7 +112,7 @@ const ModalFooter = ({ children, ...props }: ComponentProps<"div">) => {
     return (
         <div
             {...props}
-            className={style['modal__footer']}
+            className={style['overlay__modal__footer']}
         >
             {children}
         </div>

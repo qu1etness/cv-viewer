@@ -1,7 +1,47 @@
-@mixin mobile {
-    @media (max-width: 768px) {
-        @content;
-    }
+@use "variables" as v;
+
+@mixin flex($flex-direction: row, $justify: flex-start, $align: stretch, $gap: 0) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin flex-center($gap: 0) {
+    @include flex(row, center, center, $gap);
+}
+
+@mixin flex-column($gap: 0) {
+    @include flex(column, center, center, $gap);
+}
+
+@mixin font-style($size: 14px, $weight: 400, $color: v.$color-text, $line-height: 1) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $line-height;
+}
+
+@mixin cv-container-title {
+    @include font-style(0.77em, 700, v.$color-black, 1);
+    text-transform: uppercase;
+}
+
+@mixin cv-section-title {
+    @include font-style(0.77em, 700, v.$color-black, 1);
+}
+
+@mixin cv-title {
+    @include font-style(1.1em, 700, v.$color-black, 1);
+}
+
+@mixin cv-text {
+    @include font-style(0.65em, 400, v.$color-text-light, 1);
+}
+
+@mixin cv-text-bold {
+    @include font-style(0.65em, 700, v.$color-black, 1);
 }
 
 @mixin paper-shadow {
@@ -13,8 +53,51 @@
     }
 }
 
-@mixin center-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@mixin xs {
+    @media (max-width: v.$breakpoint-xs) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: v.$breakpoint-sm) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: v.$breakpoint-md) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: v.$breakpoint-lg) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (max-width: v.$breakpoint-xl) {
+        @content;
+    }
+}
+
+// --- Типографіка з різними розмірами ---
+@mixin h1 {
+    @include font-style(32px, 800, v.$color-text, 1.2);
+
+    @include md {
+        font-size: 24px;
+    }
+
+    // Зменшуємо на планшетах
+}
+
+// --- Утиліти ---
+@mixin truncate($width: 100%) {
+    max-width: $width;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

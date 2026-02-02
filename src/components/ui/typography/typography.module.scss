@@ -1,0 +1,19 @@
+.title {
+    @include m.cv-title
+}
+
+.subtitle {
+    @include m.cv-container-title
+}
+
+.text {
+    @include m.cv-text
+}
+
+.text-bold {
+    @include m.cv-text-bold
+}
+
+.section-title {
+    @include m.cv-section-title
+}

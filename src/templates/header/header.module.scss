@@ -1,20 +1,17 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include m.flex(row, space-between, center, 0);
     padding-inline: 24px;
     background-color: v.$color-white;
     border-bottom: 1px solid v.$color-app-bg;
     height: 64px;
 
     &-logo {
-        display: flex;
-        align-items: center;
-        gap: 12px;
+        @include m.flex-center(12px);
+        margin: 12px;
     }
 
     &-logo-icon {
-        @include m.center-content;
+        @include m.flex-center;
         padding: 6px;
         color: v.$color-primary-hover;
         border-radius: 5px;

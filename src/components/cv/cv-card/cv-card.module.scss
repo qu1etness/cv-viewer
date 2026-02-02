@@ -1,7 +1,29 @@
 .cv-card {
-    width: 840px;
-    height: 1188px;
-    margin-top: 48px;
+    font-size: 20px;
+    font-family: v.$font-calibri;
+    width: 42em;
+    height: 59.4em;
+    margin-top: 2.4em;
+    margin-bottom: 4em;
+    padding: 2.3em 1.85em;
+
     background-color: v.$color-white;
     @include m.paper-shadow;
+
+    @include m.xl {
+        font-size: 15px;
+    }
+
+    @include m.lg {
+        font-size: 10px;
+    }
+
+    @include m.md {
+        font-size: 8px;
+    }
+
+    @include m.xs {
+        font-size: 6px;
+    }
+
 }

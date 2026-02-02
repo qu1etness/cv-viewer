@@ -1,0 +1,57 @@
+.cv-block {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    gap: 1rem;
+    letter-spacing: -0.01em;
+
+    &__duration {
+        display: flex;
+
+        &__text {
+            margin-top: 0.45em;
+        }
+    }
+
+    &__content {
+        margin-left: 0.25em;
+        margin-top: 0.3em;
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+
+
+            &__location {
+                letter-spacing: -0.005em;
+            }
+        }
+
+        &__body {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0.3em;
+
+            &__position {
+                font-style: italic;
+            }
+
+            &__responsobilities {
+                line-height: 0.99;
+                margin-left: 0.9em;
+
+                &__item {
+                    padding-left: 0.55em;
+                    letter-spacing: -0.0065em;
+
+                    &::marker {
+                        color: v.$color-text-light;
+                        font-size: 0.6em;
+                        content: "•";
+                    }
+
+                }
+            }
+
+        }
+    }
+}
